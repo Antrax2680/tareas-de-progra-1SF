@@ -1,0 +1,42 @@
+public class Mavenproject4 {
+// MyProgram Attemp number 4 :,(
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese los anios que a trabajado: ");
+        Integer num = scanner.nextInt();
+        
+        if(num <= 5){
+            System.out.print("Principiante: ");
+            }
+        if(num <= 10 & num > 5){
+            System.out.print("Intermedio: ");
+            }
+        if (num >= 10 ){
+         System.out.print("Experto: ");
+       
+        System.out.println("Ingrese un numero para poder determinar si es numero Paro o Impar: ");
+        Integer num1 = scanner.nextInt();
+         if(num1 % 2 == 0 ){
+            System.out.print("El numero es Par\n");
+            }
+        else{
+            System.out.print("El numero es Impar\n");
+            }
+         System.out.println("Ingresa una palabra:");
+         String name = scanner.nextLine();
+         if(name.equals("a")){
+             System.out.println(name);
+         }
+         System.out.println("Ingrese un anio para determinar si es biciesto: ");
+        Integer year = scanner.nextInt();
+        if(year%4==0 && year%100!=0 || year%400==0){
+            System.out.print("El anio es biciesto");
+            }
+        else{
+            System.out.print("El anio no es biciesto");
+            }
+        
+        }
+    }
+}
