@@ -1,0 +1,42 @@
+#code 1
+num1 = 8
+num2 = 5
+suma = num1 + num2
+print( "La suma de", num1 ,"y", num2 ,f"es: { suma }\n")
+
+#Code 2
+n1 = 23
+n2 = 5
+resta = n1 - n2
+print ( "La resta de", n1 ,"y", n2 , f"es: {resta}\n")
+
+#Code 3
+n3 = 22
+n4 = 16
+multiplicar = n3 * n4
+print ( "La multiplicacion de", n3 ,"y", n4 ,f"es: {multiplicar}\n")
+
+#Code 4
+m1 = 50
+m2 = 4
+dividir = m1 / m2
+print ( "La division entre", m1 ,"y", m2 ,f" es: {dividir}\n")
+
+#Code 5
+a1 = 2 
+a2 = 3
+elev = a1 * a1 * a1 
+print ( "La potencia de", a1 ,"elevado al segundo numero que es", a2, f"\nsu resultado seria: {elev}\n")
+
+#Code 6
+def fac(nu):
+    if nu == 0:
+        return 1
+    else:
+        fact = 1
+        for i in range(1, nu + 1):
+            fact *= i
+        return fact
+
+numero = 3
+print("El factorial de", numero, "es:", fac(numero))
