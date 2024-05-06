@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class clase {
+    public static void Main(String[] args) {
+        Scanner scanner1 = new Scanner(System.in);
+        System.out.println("Ingresar un número para lograr buscar sus primeros 10 múltiplos por favor:\n");
+        int nu = scanner1.nextInt();
+        System.out.println("Los primeros 10 múltiplos de " + nu + " son:");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(nu * i);
+        }
+        System.out.println("¿Quiere seguir?\nResponder\n==> 'si' o 'no'\n");
+        String respuesta = scanner1.next();
+        if (respuesta.equalsIgnoreCase("si")) {
+            System.out.println("Hola, sea bienvenido.");
+        } else if (respuesta.equalsIgnoreCase("no")) {
+            System.out.println("Adiós :( .");
+        } else {
+            System.out.println("Error, no coinside");
+        }
+         System.out.println("Busquemos el angulo faltante del triangulo\n");
+        System.out.println("Favor de ingresar el primer dato: ");
+        double a1 = scanner1.nextDouble();
+        System.out.println("ingresar el segundo dato: ");
+        double a2 = scanner1.nextDouble();
+        double a3 = 180 - (angulo1 + angulo2);
+        System.out.println("El tercer angulo es: " + a3);
+        scanner1.close();
+    }
+}
